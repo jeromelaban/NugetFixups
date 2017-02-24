@@ -25,8 +25,6 @@ namespace NugetFixup
 
             q.Distinct().ToList().ForEach(c => c.Remove());
 
-            File.Move(assetFilePath, assetFilePath + ".bak");
-
             File.WriteAllText(assetFilePath, o.ToString());
 
             return true;
