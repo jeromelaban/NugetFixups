@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net46</TargetFrameworks>
+    <AssemblyName>NuGetFixupTasks</AssemblyName>
+    <NuSpecFile>NuGetFixup.nuspec</NuSpecFile>
+    <NuspecProperties>configuration=$(Configuration)\</NuspecProperties>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="NugetFixup.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="NugetFixup.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="15.1.0-preview-000545-01" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.2-beta2" />
+  </ItemGroup>
+
+</Project>

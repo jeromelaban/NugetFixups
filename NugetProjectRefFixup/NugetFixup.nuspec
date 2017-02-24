@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="3.5.0">
+    <id>NugetFixup</id>
+    <version>1.0.4</version>
+		<title>NuGet Fixup task collection</title>
+    <description>NuGet Fixup task collection</description>
+    <authors>Jerome Laban</authors>
+    <owners>Jerome Laban</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	</metadata>
+	<files>
+    <file src="bin\$configuration$net46\NuGetFixupTasks.dll" target="tools" />
+    <file src="bin\$configuration$net46\Newtonsoft.Json.dll" target="tools" />
+    <file src="NugetFixup.targets" target="build" />
+  </files>
+</package>
